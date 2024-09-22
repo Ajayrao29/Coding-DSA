@@ -1,4 +1,31 @@
-//https://leetcode.com/problems/sort-colors/  
+//https://leetcode.com/problems/sort-colors/
+
+/* My code 
+ 
+        The flow of the program is as follows:
+
+        - Iterate through the array from the end to the start
+        - For each iteration, iterate through the array from the start to the current index
+        - If the current element is greater than the next element, swap them
+        - Return the sorted array
+
+        Time complexity: O(n^2)
+        Space complexity: O(1)
+*/
+
+class Solution {
+public:
+    void sortColors(vector<int>& a) {
+        int n=a.size();
+        for (int i = n - 1; i >= 0; i--) {
+        for (int j = 0; j <= i - 1; j++) {
+            if (a[j] > a[j + 1]) {
+                swap(a[j],a[j+1]);
+            }
+        }
+    }
+    }
+};
 
 /*
 Brute (Naive) approach:

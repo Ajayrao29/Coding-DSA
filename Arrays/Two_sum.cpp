@@ -13,13 +13,14 @@ The output will be [0, 1] because nums[0] + nums[1] = 2 + 7 = 9
 
 The flow of the program is as follows:
 
-- Create an empty vector to store the indices of the two elements
+- Create an empty vector to store the indices of the two elements 
+- Create an empty map to store the elements in the array as keys and their indices as values when match is not found in map. 
 - Iterate through the array and for each element check if it is present in the hash map
 - If it is then return the indices of the two elements
 - If it is not then insert the element in the hash map along with its index
 
-Time complexity: O(n)
-Space complexity: O(n)
+Time complexity: O(n) //why O(n)? - Because we are iterating through the array only once 
+Space complexity: O(n) // wht o(n)? - Because we are storing the elements in the hash map 
 
 */
 
