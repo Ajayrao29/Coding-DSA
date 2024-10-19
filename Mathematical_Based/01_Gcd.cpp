@@ -2,6 +2,14 @@
 // GFG LINK      : https://www.geeksforgeeks.org/program-to-find-gcd-or-hcf-of-two-numbers
 
 //My Code :
+
+//Approach :
+// 1. Take two variables maxi and mini
+// 2. Traverse the array and update maxi and mini
+// By using euclidean algorithm we can get the GCD (best approach - following iterative method) 
+// 3.While loop runs till maxi is greater than 0 and mini is greater than 0 
+// 4. If maxi is greater than mini then maxi=maxi%mini else then mini=mini%maxi
+// 6. When while condition is false then move to next condition If maxi is 0 then return mini else return maxi 
  
 class Solution {
 public:
@@ -35,4 +43,5 @@ public:
     }
 };
 
+//refer GFG link for more approaches 
 
