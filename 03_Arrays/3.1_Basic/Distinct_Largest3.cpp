@@ -1,3 +1,5 @@
+//Three Largest distinct elements in an array
+
 vector<int>distinctlargest3(vector<int>&a){
 vector<int>res;
 int first=INT_MIN;
@@ -30,3 +32,6 @@ if (third != INT_MIN){
 
 return res;
 }
+
+//Time Complexity: O(n)
+//Space Complexity: O(1)

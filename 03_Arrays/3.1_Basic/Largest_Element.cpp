@@ -9,3 +9,6 @@ max=a[i];
 }
 return max;
 }
+
+//Time Complexity: O(n)
+//Space Complexity: O(1)
